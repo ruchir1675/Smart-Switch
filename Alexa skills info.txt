@@ -1,42 +1,48 @@
+
+Intents (can be use any)
 smartswitch
-set switch trigger to {Numbers} percent {tmp_scale}
-{query} is the switch state
-{Switch_State} switch trigger
-set switch trigger to {Numbers} degree {tmp_scale}
-turn switch {Switch_State}
-{query} switch {Switch_State}
-{query} is the current {Sensor_Values}
 
-
+================================================
+************************************************
 Slots
-AMAZON.NUMBER
 
-measurment_type
+1.measurment_type (Slot 1)
+Values
 humidity
 temperature
 
-query
+2.query (Slot 2)
+Values
 is
 what
 
-switchstate
+3.switchstate (Slot 3)
+Values
 off
 on
 
-tempscale
+4.tempscale (Slot 4)
+Values
 celsius
 fahrenheit
 
+5.inbuilt slot
+AMAZON.NUMBER
 
-Intent Slots
+========================================================
+********************************************************
+Intent Slots (Mapping this with slots)
 Switch_State -->switchstate
 Sensor_Values-->measurment_type
 Numbers-->AMAZON.NUMBER
 query-->query
 tmp_scale-->tempscale
 
+=========================================================
+*********************************************************
 
-smartswitch
+Sample Utterences
+
 set switch trigger to {Numbers} percent {tmp_scale}
 {query} is the switch state
 {Switch_State} switch trigger
@@ -44,3 +50,6 @@ set switch trigger to {Numbers} degree {tmp_scale}
 turn switch {Switch_State}
 {query} switch {Switch_State}
 {query} is the current {Sensor_Values}
+
+===========================================================
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
